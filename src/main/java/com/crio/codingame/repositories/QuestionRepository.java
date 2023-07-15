@@ -54,13 +54,11 @@ public class QuestionRepository implements IQuestionRepository {
     @Override
     public void delete(Question entity) {
         // TODO Auto-generated method stub
-
     }
 
     @Override
     public void deleteById(String id) {
         // TODO Auto-generated method stub
-
     }
 
     @Override

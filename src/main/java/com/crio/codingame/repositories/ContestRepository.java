@@ -55,13 +55,11 @@ public class ContestRepository implements IContestRepository {
     @Override
     public void delete(Contest entity) {
         // TODO Auto-generated method stub
-
     }
 
     @Override
     public void deleteById(String id) {
         // TODO Auto-generated method stub
-
     }
 
     @Override

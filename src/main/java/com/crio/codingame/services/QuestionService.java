@@ -1,7 +1,6 @@
 package com.crio.codingame.services;
 
 import java.util.List;
-
 import com.crio.codingame.entities.Level;
 import com.crio.codingame.entities.Question;
 import com.crio.codingame.repositories.IQuestionRepository;
