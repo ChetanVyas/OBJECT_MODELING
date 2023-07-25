@@ -68,8 +68,9 @@ public class Playlist extends BaseEntity {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Playlist playlist)) return false;
-        return this.id.equals(playlist.getId());
+        if (!(o instanceof Playlist)) return false;
+        Playlist that = (Playlist) o;
+        return this.id.equals(that.getId());
     }
 
     @Override
