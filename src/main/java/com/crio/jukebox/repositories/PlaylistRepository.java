@@ -3,6 +3,7 @@ package com.crio.jukebox.repositories;
 import com.crio.jukebox.entities.Playlist;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * PlaylistRepository is an implementation of the IPlaylistRepository interface that uses a Map to store Playlist entities.
@@ -127,6 +128,6 @@ public class PlaylistRepository implements IPlaylistRepository {
     public List<Playlist> findByUserId(String userId) {
         return playlistMap.values().stream()
                 .filter(playlist -> playlist.getCreatorId().equals(userId))
-                .toList();
+                .collect(Collectors.toList());
     }
 }

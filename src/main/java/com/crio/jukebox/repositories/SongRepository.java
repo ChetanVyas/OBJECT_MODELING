@@ -3,6 +3,7 @@ package com.crio.jukebox.repositories;
 import com.crio.jukebox.entities.Song;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * SongRepository is an implementation of the ISongRepository interface that uses a Map to store Song entities.
@@ -129,7 +130,7 @@ public class SongRepository implements ISongRepository {
         // Streams to filter songs by matching their names with the provided song name.
         return songMap.values().stream()
                 .filter(song -> song.getName().equals(songName))
-                .toList();
+                .collect(Collectors.toList());
     }
 
     /**
@@ -141,7 +142,7 @@ public class SongRepository implements ISongRepository {
     public List<Song> findByArtist(String artist) {
         return songMap.values().stream()
                 .filter(song -> song.getArtist().equals(artist))
-                .toList();
+                .collect(Collectors.toList());
     }
 
     /**
@@ -153,7 +154,7 @@ public class SongRepository implements ISongRepository {
     public List<Song> findByAlbum(String album) {
         return songMap.values().stream()
                 .filter(song -> song.getAlbumName().equals(album))
-                .toList();
+                .collect(Collectors.toList());
     }
 
     /**
@@ -165,6 +166,6 @@ public class SongRepository implements ISongRepository {
     public List<Song> findByGenre(String genre) {
         return songMap.values().stream()
                 .filter(song -> song.getGenre().equals(genre))
-                .toList();
+                .collect(Collectors.toList());
     }
 }
