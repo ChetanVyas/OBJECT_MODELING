@@ -9,7 +9,7 @@ import com.crio.codingame.exceptions.ContestNotFoundException;
 import com.crio.codingame.exceptions.InvalidOperationException;
 import com.crio.codingame.exceptions.UserNotFoundException;
 
-public interface IUserService {
+public interface  IUserService {
     public User create(String name);
     public List<User> getAllUserScoreOrderWise(ScoreOrder scoreOrder);
     public UserRegistrationDto attendContest(String contestId, String userName) throws ContestNotFoundException, UserNotFoundException, InvalidOperationException;

@@ -6,6 +6,7 @@ plugins {
 ext {
 	buildId = System.currentTimeMillis()
 	codinGameMainClass = "com.crio.codingame.App"
+	jukeBoxMainClass = "com.crio.jukebox.App"
 }
 
 // CRIO_SOLUTION_AND_STUB_START_MODULE_TAKEHOME
@@ -16,10 +17,9 @@ application {
     mainClass = codinGameMainClass
 }
 
-
 group = 'com.crio'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = "1.9"
+sourceCompatibility = "16"
 
 repositories {
 	mavenCentral()
@@ -52,4 +52,4 @@ test {
 	}
 }
 
-targetCompatibility = JavaVersion.VERSION_1_9
+targetCompatibility = JavaVersion.VERSION_16
